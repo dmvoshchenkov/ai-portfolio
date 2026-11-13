@@ -55,7 +55,7 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><b>Dmitrii Voshchenkov</b><a href="#about">About</a><a href="#value">Value</a><a href="#artifact-1">AI Timeline</a><a href="#artifact-2">ML vs. DL</a></div></nav>
+<nav><div class="wrap"><b>Dmitrii Voshchenkov</b><a href="#about">About</a><a href="#value">Value</a><a href="#artifact-1">AI Timeline</a><a href="#artifact-2">ML vs. DL</a><a href="#artifact-3">Neural Networks</a></div></nav>
 
 <header><div class="wrap">
 <div class="eyebrow">AI & Machine Learning Portfolio</div>
@@ -172,6 +172,48 @@ I help operations leaders and small-business owners find the one AI use case tha
 <p>Gulshan, V., Peng, L., Coram, M., Stumpe, M. C., Wu, D., Narayanaswamy, A., Venugopalan, S., Widner, K., Madams, T., Cuadros, J., Kim, R., Raman, R., Nelson, P. C., Mega, J. L., & Webster, D. R. (2016). Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs. <i>JAMA, 316</i>(22), 2402–2410. https://doi.org/10.1001/jama.2016.17216</p>
 <p>Indiana Wesleyan University. (2026). <i>2.3 Assignment: Machine learning vs. deep learning</i> [Lesson]. AIML-500, Brightspace.</p>
 <p>Vafeiadis, T., Diamantaras, K. I., Sarigiannidis, G., & Chatzisavvas, K. C. (2015). A comparison of machine learning techniques for customer churn prediction. <i>Simulation Modelling Practice and Theory, 55</i>, 1–9. https://doi.org/10.1016/j.simpat.2015.03.003</p>
+</div>
+</div></section>
+
+<section id="artifact-3"><div class="wrap">
+<div class="artifact-head"><span class="num">Artifact 3</span><h2>Neural Networks in 60 Seconds, and How to Get AI to Explain Anything Simply</h2></div>
+<div class="meta">Adapted from AIML-500 Workshop 3 (3.4 Communicating for Learning) · Audience: operations and small-business decision-makers</div>
+<dl>
+<dt>Introduction</dt>
+<dd>Leaders are increasingly asked to approve, buy, or roll out tools built on neural networks, often without a clear picture of what one is. This artifact gives a one-minute plain-language explanation, plus the prompting technique I used to produce it, so readers can get the same kind of clear explanation for any technical topic.</dd>
+<dt>Description</dt>
+<dd>A short explainer built around an everyday analogy, followed by a repeatable four-step prompt recipe for turning generic AI output into an explanation a specific audience will actually remember.</dd>
+</dl>
+<div class="card" style="margin:22px 0">
+<h3 style="margin-top:0">What's a neural network? Think about how you learned to pick a ripe avocado.</h3>
+<p>At first, you probably checked one thing, like the color. But color alone fools you. Over time you learned to combine clues: dark skin <i>and</i> a slight give when squeezed <i>and</i> a stem cap that comes off easily. That combination means "ripe." A neural network learns the same way, just from thousands of examples instead of years of grocery trips.</p>
+<table>
+<tr><th>Part</th><th>What it does</th><th>Avocado version</th></tr>
+<tr><td><b>Inputs</b></td><td>The facts the model looks at</td><td>Color, firmness, size, stem</td></tr>
+<tr><td><b>Hidden layers</b></td><td>Combine facts into patterns, from simple to complex</td><td>"Pretty dark" → "dark + soft = probably ripe"</td></tr>
+<tr><td><b>Output</b></td><td>The model's answer, often as a probability</td><td>"85% chance this one is ripe"</td></tr>
+<tr><td><b>Learning</b></td><td>After each wrong guess, adjusts how much it trusts each clue</td><td>Gets better with every avocado</td></tr>
+</table>
+<p style="margin-bottom:0"><b>The catch:</b> it only knows what it was shown. Train it only on Hass avocados and it may misjudge a green Florida avocado. Good examples in, good answers out.</p>
+</div>
+<div class="callout"><b>The prompt recipe:</b> (1) Name the audience. (2) Ask for an analogy from their everyday world. (3) Ask for a short, scannable structure. (4) Ask it to state one honest limitation. A generic "explain X simply" prompt gets a correct but forgettable answer. These four additions are what make it stick.</div>
+<dl>
+<dt>Objective</dt>
+<dd>To help non-technical decision-makers understand the basic mechanics of neural networks, and to give them a reusable method for getting clear explanations of any AI concept from generative AI tools.</dd>
+<dt>Process</dt>
+<dd>For the class discussion I used Claude (Anthropic) to create a simple explanation of neural networks, applying the course lesson's communication strategies: tailored approach, storytelling, clear structure, and honesty about limits. For the portfolio I turned the explanation into a reference table and added the prompt recipe, so the reader gets both the answer and the method.</dd>
+<dt>Tools and Technologies Used</dt>
+<dd>Claude (Anthropic) for iterative prompting and drafting, AIML-500 Workshop 3 lesson content on communication for learning, and HTML/CSS for this page.</dd>
+<dt>Value Proposition</dt>
+<dd>A leader can understand what a neural network does in one minute and can reuse the four-step recipe to get clear explanations of any technical topic before making a decision.</dd>
+<dt>Unique Value</dt>
+<dd>Most neural network explainers either drown readers in math or oversimplify with "it works like a brain." This one uses a concrete everyday analogy that maps directly onto the real components, and it teaches the communication technique behind it.</dd>
+<dt>Relevance</dt>
+<dd>Neural networks power many of the AI tools businesses are adopting, from demand forecasting to voice assistants and image inspection. Leaders who understand the basics, especially that a model is only as good as its examples, ask better questions before buying or deploying these tools.</dd>
+</dl>
+<div class="refs" style="margin-top:22px"><b>References</b>
+<p>Anthropic. (2026). <i>Claude</i> [Large language model]. https://claude.ai</p>
+<p>Indiana Wesleyan University. (2026). <i>3.4 Discussion: Communicating for learning</i> [Lesson]. AIML-500, Brightspace.</p>
 </div>
 </div></section>
 
