@@ -55,7 +55,7 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><b>Dmitrii Voshchenkov</b><a href="#about">About</a><a href="#value">Value</a><a href="#artifact-1">AI Timeline</a><a href="#artifact-2">ML vs. DL</a><a href="#artifact-3">Neural Networks</a></div></nav>
+<nav><div class="wrap"><b>Dmitrii Voshchenkov</b><a href="#about">About</a><a href="#value">Value</a><a href="#artifact-1">AI Timeline</a><a href="#artifact-2">ML vs. DL</a><a href="#artifact-3">Neural Networks</a><a href="#artifact-4">AI Checklist</a></div></nav>
 
 <header><div class="wrap">
 <div class="eyebrow">AI & Machine Learning Portfolio</div>
@@ -214,6 +214,63 @@ I help operations leaders and small-business owners find the one AI use case tha
 <div class="refs" style="margin-top:22px"><b>References</b>
 <p>Anthropic. (2026). <i>Claude</i> [Large language model]. https://claude.ai</p>
 <p>Indiana Wesleyan University. (2026). <i>3.4 Discussion: Communicating for learning</i> [Lesson]. AIML-500, Brightspace.</p>
+</div>
+</div></section>
+
+<section id="artifact-4"><div class="wrap">
+<div class="artifact-head"><span class="num">Artifact 4</span><h2>Before You Deploy AI: A Data-Readiness Checklist</h2></div>
+<div class="meta">Adapted from AIML-500 Workshop 4 (4.3 Data Challenge Scenarios) · Audience: operations and small-business decision-makers</div>
+<dl>
+<dt>Introduction</dt>
+<dd>Most AI failures aren't algorithm failures. They're data failures: dirty data, biased history, or a model used somewhere it was never tested. This checklist turns three realistic case scenarios into questions a leader can ask before approving any AI project.</dd>
+<dt>Description</dt>
+<dd>A one-page, three-part checklist covering data quality, bias and deployment risk, and data sharing and privacy, with a short real-world-style example for each part.</dd>
+</dl>
+<div class="card" style="margin:22px 0">
+<h3 style="margin-top:0">1. Is the data clean, and can we prove it?</h3>
+<p style="margin-top:4px"><i>Example: a sentiment model built from 800,000 public reviews full of duplicates, spam, missing fields, and star ratings used as labels.</i></p>
+<ul>
+<li>Is an untouched copy of the raw data saved, so every cleaning step can be checked or undone?</li>
+<li>Have duplicates and spam been removed <b>before</b> time is spent fixing formats?</li>
+<li>Do the labels actually measure what we care about? (A 5-star rating can sit on top of an angry review.)</li>
+<li>Does the data cover the languages and customers the model will really serve?</li>
+</ul>
+<h3>2. Will it work, and be fair, where we're actually using it?</h3>
+<p style="margin-top:4px"><i>Example: a résumé screener trained on 10 years of one company's hiring decisions, now being rolled out in a new country at 10× the volume.</i></p>
+<ul>
+<li>Do the historical labels reflect real performance, or just past human decisions and their biases?</li>
+<li>Could any input (zip code, school name) be a stand-in for race, gender, or background?</li>
+<li>Has it been tested on data from the <b>new</b> context, not just the old one?</li>
+<li>Are results compared across groups, piloted with human review, and monitored after launch?</li>
+<li>At the planned scale, how many people does a "small" error rate affect?</li>
+</ul>
+<h3>3. Can we share data without putting people at risk?</h3>
+<p style="margin-top:4px"><i>Example: two hospitals that want a better diagnostic model but can't move patient records, and that code diagnoses differently.</i></p>
+<ul>
+<li>Can the model come to the data instead (federated learning or a secure third-party platform), so raw records never move?</li>
+<li>Have definitions and codes been aligned <b>before</b> combining anything? Mismatched codes produce wrong answers.</li>
+<li>Is there a written agreement on who can access what, and for what purpose, plus encryption and access controls?</li>
+<li>Is the final model tested separately for each partner's population?</li>
+</ul>
+</div>
+<div class="callout"><b>Bottom line:</b> a model that tests well on old data is not proof that it's safe to use. Ask these questions before launch, because fixing data problems after deployment costs far more than catching them up front.</div>
+<dl>
+<dt>Objective</dt>
+<dd>To give non-technical decision-makers a practical set of questions for judging whether an AI project's data is ready, fair, and safe before they approve or buy it.</dd>
+<dt>Process</dt>
+<dd>In the course I worked through three scenarios with an AI coach (Claude, Anthropic): cleaning a messy review dataset, scaling a résumé screener to a new country, and designing a privacy-safe hospital collaboration. I then turned my decisions and the key lessons into yes/no-style checklist questions, keeping one example per section so the reader understands why each question matters.</dd>
+<dt>Tools and Technologies Used</dt>
+<dd>Claude (Anthropic) running the course's Data Challenge Scenarios exercise and helping draft the checklist, AIML-500 Workshop 4 content, and HTML/CSS for this page.</dd>
+<dt>Value Proposition</dt>
+<dd>A leader can run through this list in ten minutes during a vendor demo or project review and catch the most common, and most expensive, AI data problems before they reach customers or employees.</dd>
+<dt>Unique Value</dt>
+<dd>It's written as questions a manager can ask, not technical instructions, and it ties data quality, fairness, and privacy together instead of treating them as separate topics.</dd>
+<dt>Relevance</dt>
+<dd>As more businesses buy AI tools off the shelf, the people approving them are rarely data scientists. A short, plain-language checklist helps them hold vendors and internal teams accountable for the data behind the model.</dd>
+</dl>
+<div class="refs" style="margin-top:22px"><b>References</b>
+<p>Anthropic. (2026). <i>Claude</i> [Large language model]. https://claude.ai</p>
+<p>Indiana Wesleyan University. (2026). <i>4.3 Assignment: Data challenge scenarios</i> [Course materials]. AIML-500, Brightspace.</p>
 </div>
 </div></section>
 
